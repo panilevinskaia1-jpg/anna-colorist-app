@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <!-- Запрет масштабирования — обязательно для TMA -->
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,
+                 maximum-scale=1.0, user-scalable=no">
+  <!-- Отключить автоопределение телефонов как ссылок (iOS) -->
+  <meta name="format-detection" content="telephone=no">
+  <!-- PWA-мета -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <title>Анна Соколова — Колорист</title>
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--
+    Telegram Web App SDK.
+    В браузере (file://) не загружается — нет смысла, работаем в fallback-режиме.
+    В production (https://) загружается синхронно перед остальными скриптами.
+  -->
+  <script>
+    if (location.protocol !== 'file:') {
+      document.write('<scr' + 'ipt src="https://telegram.org/js/telegram-web-app.js"><\/scr' + 'ipt>');
+    }
+  </script>
+</head>
+<body>
+
+  <!-- ══ Основной контейнер ══════════════════════════════════ -->
+  <!-- Индикатор загрузки — скрывается когда JS запустится -->
+  <div id="loading" style="position:fixed;inset:0;display:flex;align-items:center;
+       justify-content:center;background:#EFEFF4;z-index:999;font-size:18px;
+       font-family:sans-serif;color:#666;">Загрузка...</div>
+
+  <div id="app">
+    <div class="screen" id="screen-home"></div>
+    <div class="screen" id="screen-catalog"></div>
+    <div class="screen" id="screen-service"></div>
+    <div class="screen" id="screen-timepicker"></div>
+    <div class="screen" id="screen-summary"></div>
+    <div class="screen" id="screen-success"></div>
+    <div class="screen" id="screen-bookings"></div>
+  </div>
+
+  <!-- ══ Overlay (затемнение под Bottom Sheet) ═══════════════ -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- ══ Bottom Sheet (модальное окно снизу) ════════════════ -->
+  <div id="bottom-sheet" class="bottom-sheet">
+    <div class="bottom-sheet__handle"></div>
+    <div id="bs-content"></div>
+  </div>
+
+  <!--
+    Fallback MainButton — отображается только в браузере,
+    когда нет нативного tg.MainButton.
+    В Telegram этот элемент скрыт (display:none).
+  -->
+  <button id="main-btn-fallback" class="main-btn-fallback"></button>
+
+  <!--
+    Fallback BackButton — отображается только в браузере,
+    когда нет нативного tg.BackButton.
+    В Telegram этот элемент скрыт (display:none).
+  -->
+  <button id="back-btn-fallback" class="back-btn-fallback">‹ Назад</button>
+
+  <!-- ══ Скрипты — в правильном порядке ═════════════════════ -->
+  <script src="js/data.js"></script>      <!-- данные мастера и услуг   -->
+  <script src="js/telegram.js"></script>  <!-- обёртка над TG SDK       -->
+  <script src="js/app.js"></script>       <!-- роутер, экраны, события  -->
+
+</body>
+</html>
