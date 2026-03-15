@@ -328,4 +328,3 @@ const DEMO_PAST_BOOKINGS = [
     status: 'completed',
   },
 ];
-
