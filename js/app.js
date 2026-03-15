@@ -215,8 +215,10 @@ function renderCategoryChips() {
 
 // Карусель фото услуги
 function renderCarousel(photos) {
-  const items = photos.map(bg => `
-    <div class="carousel-item" style="${bgStyle(bg)}"></div>
+  const items = photos.map(src => `
+    <div class="carousel-item">
+      <img src="${src}" alt="" class="carousel-img">
+    </div>
   `).join('');
   const dots = photos.map((_, i) => `
     <div class="carousel-dot ${i === 0 ? 'active' : ''}"></div>
