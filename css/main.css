@@ -256,6 +256,8 @@ input, textarea { font-family: inherit; outline: none; }
   aspect-ratio: 1 / 1;
   position: relative;
   background-color: #111;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
 }
 
 .service-card__photo::after {
@@ -498,7 +500,10 @@ input, textarea { font-family: inherit; outline: none; }
 .carousel-item {
   flex: 0 0 100%;
   scroll-snap-align: start;
-  height: 240px;
+  height: 400px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-color: #111;
 }
 
 .carousel-dots {
