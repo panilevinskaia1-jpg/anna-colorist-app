@@ -395,7 +395,7 @@ function renderHome() {
   const services = _getServices().slice(0, 4); // показываем первые 4
   return `
     <div class="hero">
-      <div class="hero__bg" style="${bgStyle(m.photo, 'center top') || bgStyle(m.heroBg) || 'background:linear-gradient(135deg,#667eea,#764ba2)'}"></div>
+      <div class="hero__bg" style="${bgStyle(m.photo, '50% 25%') || bgStyle(m.heroBg) || 'background:linear-gradient(135deg,#667eea,#764ba2)'}"></div>
       <div class="hero__overlay">
         <div class="hero__info">
           <div class="hero__name">${m.name || 'Мастер'}</div>
