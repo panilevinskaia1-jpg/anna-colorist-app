@@ -500,10 +500,14 @@ input, textarea { font-family: inherit; outline: none; }
 .carousel-item {
   flex: 0 0 100%;
   scroll-snap-align: start;
-  height: 400px;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
   background-color: #111;
+}
+
+.carousel-img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  max-height: 70vh;
 }
 
 .carousel-dots {
