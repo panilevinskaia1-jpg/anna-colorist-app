@@ -59,9 +59,13 @@ const SERVICES = [
     ],
     cancelPolicy: 'Бесплатная отмена или перенос за 24 часа до записи',
     photos: [
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80',
-      'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80',
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80',
+      'img/photo_2026-03-15_20-55-11.jpg',
+      'img/photo_2026-03-15_20-55-05.jpg',
+      'img/photo_2026-03-15_20-54-59.jpg',
+      'img/photo_2026-03-15_20-54-54.jpg',
+      'img/photo_2026-03-15_20-54-48.jpg',
+      'img/photo_2026-03-15_20-54-42.jpg',
+      'img/photo_2026-03-15_20-54-34.jpg',
     ],
   },
   {
@@ -85,9 +89,9 @@ const SERVICES = [
     ],
     cancelPolicy: 'Бесплатная отмена или перенос за 24 часа до записи',
     photos: [
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80',
-      'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&q=80',
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80',
+      'img/photo_2026-03-15_21-00-35.jpg',
+      'img/photo_2026-03-15_21-00-30.jpg',
+      'img/photo_2026-03-15_21-00-25.jpg',
     ],
   },
   {
@@ -109,9 +113,11 @@ const SERVICES = [
     ],
     cancelPolicy: 'Бесплатная отмена или перенос за 24 часа до записи',
     photos: [
-      'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80',
-      'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80',
-      'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80',
+      'img/photo_2026-03-15_21-00-35.jpg',
+      'img/photo_2026-03-15_21-00-30.jpg',
+      'img/photo_2026-03-15_21-00-25.jpg',
+      'img/photo_2026-03-15_21-00-20.jpg',
+      'img/photo_2026-03-15_21-00-15.jpg',
     ],
   },
   {
@@ -135,9 +141,9 @@ const SERVICES = [
     ],
     cancelPolicy: 'Бесплатная отмена или перенос за 24 часа до записи',
     photos: [
-      'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80',
-      'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80',
-      'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80',
+      'img/photo_2026-03-15_20-54-34.jpg',
+      'img/photo_2026-03-15_20-54-42.jpg',
+      'img/photo_2026-03-15_20-54-48.jpg',
     ],
   },
   {
@@ -160,33 +166,40 @@ const SERVICES = [
     ],
     cancelPolicy: 'Бесплатная отмена или перенос за 24 часа до записи',
     photos: [
-      'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80',
-      'https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=600&q=80',
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80',
+      'img/photo_2026-03-15_21-20-57.jpg',
+      'img/photo_2026-03-15_21-20-53.jpg',
+      'img/photo_2026-03-15_21-20-49.jpg',
+      'img/photo_2026-03-15_21-20-44.jpg',
+      'img/photo_2026-03-15_21-20-40.jpg',
+      'img/photo_2026-03-15_21-20-30.jpg',
     ],
   },
   {
     id: 'totalbond',
-    category: 'care',
-    title: 'Тотал Бонд',
-    subtitle: 'Защита волос при окрашивании',
+    category: 'coloring',
+    title: 'Тотал Блонд',
+    subtitle: 'Полное осветление в блонд',
     description:
-      'Профессиональная система защиты волос во время химических процедур. ' +
-      'Восстанавливает внутренние связи волоса, предотвращает ломкость и пересушивание. ' +
-      'Добавляется к любой процедуре окрашивания.',
-    duration: 'Добавляется к процедуре',
-    priceFrom: 1500,
-    prices: { short: 1500, medium: 2000, long: 2500, verylong: 3000 },
+      'Профессиональное осветление волос до желаемого оттенка блонд. ' +
+      'Бережная техника с защитой структуры волоса на каждом этапе. ' +
+      'Результат — сияющий, равномерный блонд без желтизны.',
+    duration: '3–6 часов',
+    priceFrom: 8000,
+    prices: { short: 8000, medium: 12000, long: 16000, verylong: 20000 },
     process: [
-      'Нанесение первой фазы перед окрашиванием',
-      'Смешивание второй фазы с краской',
-      'Финальное восстановление после смывания',
+      'Консультация и подбор оттенка блонд',
+      'Поэтапное осветление с защитой волоса',
+      'Нейтрализация желтизны',
+      'Тонирование в желаемый оттенок',
+      'Восстанавливающий уход',
     ],
     cancelPolicy: 'Бесплатная отмена или перенос за 24 часа до записи',
     photos: [
-      'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80',
-      'https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=600&q=80',
-      'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&q=80',
+      'img/photo_2026-03-15_20-25-23.jpg',
+      'img/photo_2026-03-15_20-46-47.jpg',
+      'img/photo_2026-03-15_20-46-54.jpg',
+      'img/photo_2026-03-15_20-47-03.jpg',
+      'img/photo_2026-03-15_20-47-09.jpg',
     ],
   },
   {
@@ -210,9 +223,9 @@ const SERVICES = [
     ],
     cancelPolicy: 'Бесплатная отмена или перенос за 24 часа до записи',
     photos: [
-      'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80',
-      'https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=600&q=80',
-      'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&q=80',
+      'img/photo_2026-03-15_21-20-57.jpg',
+      'img/photo_2026-03-15_21-20-53.jpg',
+      'img/photo_2026-03-15_21-20-49.jpg',
     ],
   },
   {
@@ -236,9 +249,8 @@ const SERVICES = [
     ],
     cancelPolicy: 'Бесплатная отмена или перенос за 48 часов до записи',
     photos: [
-      'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80',
-      'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80',
-      'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80',
+      'img/photo_2026-03-15_21-18-33.jpg',
+      'img/photo_2026-03-15_21-18-26.jpg',
     ],
   },
 ];
