@@ -177,7 +177,7 @@ const Router = {
 // Возвращает CSS-строку для фона: URL → background-image, градиент → background
 function bgStyle(src, pos) {
   if (!src) return '';
-  if (src.startsWith('http') || src.startsWith('/') || src.startsWith('.')) {
+  if (src.startsWith('http') || src.startsWith('/') || src.startsWith('.') || src.match(/\.(jpg|jpeg|png|webp|gif)/i)) {
     return `background-image:url('${src}');background-size:cover;background-position:${pos || 'center'};`;
   }
   return `background:${src};`;
