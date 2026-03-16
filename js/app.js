@@ -409,11 +409,6 @@ function renderHome() {
 
     <div class="rating-strip">
       <div class="rating-item">
-        <div class="rating-item__value">★ ${m.rating || '—'}</div>
-        <div class="rating-item__label">${m.reviewsCount || 0} отзывов</div>
-      </div>
-      <div class="rating-sep"></div>
-      <div class="rating-item">
         <div class="rating-item__value">${m.worksCount || '—'}</div>
         <div class="rating-item__label">работ</div>
       </div>
@@ -473,6 +468,9 @@ function renderService() {
     <div class="info-block">
       <div class="info-block__label">Цена (зависит от длины волос)</div>
       ${renderPriceMatrix(s.prices)}
+      <div style="font-size:13px;color:var(--tg-hint);margin-top:8px;">
+        Поправка на густоту волос 2000 - 4000 руб.
+      </div>
     </div>
 
     <div class="info-block">
